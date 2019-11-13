@@ -36,12 +36,12 @@ def list_of_directors(source)
 end
 
 def total_gross(source)
-  # Write this implementation
+  total = 0# Write this implementation
   list = directors_totals(source)
   names = list_of_directors(source)
   names.each do |name|
       binding.pry
-    list[name]
+   total += list[name]
   end
 
   # Should use methods:
