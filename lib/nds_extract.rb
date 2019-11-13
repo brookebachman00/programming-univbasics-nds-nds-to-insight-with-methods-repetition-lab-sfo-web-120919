@@ -37,8 +37,11 @@ end
 
 def total_gross(source)
   # Write this implementation
-  total = directors_totals(source)
+  list = directors_totals(source)
   names = list_of_directors(source)
+  names.each do |name|
+    list[name]
+  end
   binding.pry
   # Should use methods:
   # 1. directors_totals: returns a Hash of { dir_name => gross }
