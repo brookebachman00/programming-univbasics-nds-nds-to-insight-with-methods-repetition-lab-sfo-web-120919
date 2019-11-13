@@ -25,11 +25,11 @@ end
 
 def list_of_directors(source)
   source.each do |director|
-    directores += source[:name] 
-  directors = [] 
-  
+    directores += source[:name]
+  directors = []
+
   # Write this implementation
-  return directors 
+  return directors
 end
 
 def total_gross(source)
