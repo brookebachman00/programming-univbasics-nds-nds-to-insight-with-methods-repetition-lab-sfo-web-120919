@@ -27,7 +27,7 @@ end
 def list_of_directors(source)
   directors = []
   source.each do |director|
-    binding.pry
+
     directors << director[:name]
 
   end
