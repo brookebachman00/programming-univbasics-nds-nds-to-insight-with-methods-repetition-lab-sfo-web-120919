@@ -40,8 +40,7 @@ def total_gross(source)
   list = directors_totals(source)
   names = list_of_directors(source)
   names.each do |name|
-      binding.pry
-   total += list[name]
+    total += list[name]
   end
 
   # Should use methods:
