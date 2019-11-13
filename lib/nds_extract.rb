@@ -1,6 +1,7 @@
 $LOAD_PATH.unshift(File.dirname(__FILE__))
 require_relative './directors_database'
 require 'pry'
+
 def directors_totals(source)
   result = {}
   director_index = 0
@@ -35,7 +36,9 @@ end
 
 def total_gross(source)
   # Write this implementation
-  total = directors_totals(director)
+  total = 0
+  total += directors_totals[director_name] 
+  binding.pry
   # Should use methods:
   # 1. directors_totals: returns a Hash of { dir_name => gross }
   # 2. list_of_directors: names provides an Array of directors names (use
