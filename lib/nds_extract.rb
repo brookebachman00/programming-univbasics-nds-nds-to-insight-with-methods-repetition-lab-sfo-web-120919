@@ -25,9 +25,10 @@ def gross_for_director(d)
 end
 
 def list_of_directors(source)
+  directors = []
   source.each do |director|
-    directors += source[:name]
-    directors = []
+    directors << source[:name]
+
   end
 
   # Write this implementation
