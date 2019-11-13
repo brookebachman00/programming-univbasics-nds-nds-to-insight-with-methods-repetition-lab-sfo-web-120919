@@ -30,7 +30,6 @@ def list_of_directors(source)
     directors << source[:name]
 
   end
-
   # Write this implementation
   return directors
 end
